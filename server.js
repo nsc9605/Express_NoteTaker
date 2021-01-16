@@ -12,17 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+require("./routes/apiRoute")(app);
+require("./routes/htmlRoute")(app);
 
 // HTML routes
 app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "./public/index.html"));
 });
 
-app.get("/notes", function(req, res) {
-    res.sendFile(path.join(__dirname, "./public/notes.html"));
-});
-
-// API routes
 
 
 // LISTENER -- Starts server
