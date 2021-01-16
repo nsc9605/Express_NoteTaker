@@ -1,6 +1,7 @@
 // Require dependencies
 const fs = require("fs");
 const db = require("../db/db.json");
+const data = require("../db/data");
 
 // get API routes
 module.exports = function (app) {
