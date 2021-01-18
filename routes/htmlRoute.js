@@ -3,7 +3,7 @@ const path = require("path");
 
 // Export modules
 module.exports = function (app) {
-  // GET html route
+  // GET html route request
   app.get("/notes", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/notes.html"));
   });

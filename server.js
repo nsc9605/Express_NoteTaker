@@ -1,6 +1,5 @@
 // Dependencies
 const express = require("express");
-// const path = require("path");
 
 // Create server
 const app = express();
@@ -11,17 +10,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("./public"));
 
+// Require route files for server to respond to user requests
 require("./routes/apiRoute")(app);
 require("./routes/htmlRoute")(app);
 
-// HTML routes
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
-});
-
-
-
 // LISTENER -- Starts server
-app.listen(PORT, function() {
-    console.log("App is listening on PORT: " + PORT);
+app.listen(PORT, function () {
+  console.log("App is listening on PORT: " + PORT);
 });
