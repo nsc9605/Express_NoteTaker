@@ -19,7 +19,7 @@ module.exports = function (app) {
     newNote.id = uuidv4();
     notesData.push(newNote);
     res.json(newNote);
-
+    refreshDB();
   });
 
   // Delete notes
@@ -32,12 +32,15 @@ module.exports = function (app) {
       }
     }
     res.send(notesData);
-
-    // Return remaining notes to client
-    fs.writeFile("./db/db.json", JSON.stringify(notesData), function (err) {
-      if (err) throw err;
-      return true;
-      }
-    );
+    refreshDB();
+  
   });
 };
+
+// Return remaining notes to client
+function refreshDB() {
+  fs.writeFile("./db/db.json", JSON.stringify(notesData), function (err) {
+    if (err) throw err;
+    return true;
+  });
+}
