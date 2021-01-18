@@ -19,17 +19,27 @@ module.exports = function (app) {
     newNote.id = uuidv4();
     notesData.push(newNote);
     res.json(newNote);
+
+    // Return remaining notes to client
+    fs.writeFile("./db/db.json", JSON.stringify(notesData), function () {
+      res.json(notesData);
+    });
   });
 
   // Delete notes
   app.delete("/api/notes/:id", function (req, res) {
     var idToDelete = req.params.id;
-    console.log(req.params.id);
+    // console.log(req.params.id);
     for (var i = 0; i < notesData.length; i++) {
       if (idToDelete == notesData[i].id) {
-        notesData.splice(i, 1)
+        notesData.splice(i, 1);
       }
     }
     res.send("works");
+
+    // Return remaining notes to client
+    fs.writeFile("./db/db.json", JSON.stringify(notesData), function () {
+      res.json(notesData);
+    });
   });
 };
