@@ -20,10 +20,6 @@ module.exports = function (app) {
     notesData.push(newNote);
     res.json(newNote);
 
-    // Return remaining notes to client
-    // fs.writeFile("./db/db.json", JSON.stringify(notesData), function () {
-    //   res.json(notesData);
-    // });
   });
 
   // Delete notes
