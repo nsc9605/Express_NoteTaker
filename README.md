@@ -66,11 +66,11 @@
     
   ## Technologies
   
-  * [Visual Studio Code](https://code.visualstudio.com/) 
-  * Terminal / Git Bash
+  * [Visual Studio Code](https://code.visualstudio.com/)
   * [Node.js](https://nodejs.org/en/)  
   * [Express](https://expressjs.com/)
   * [Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+  * Terminal / Git Bash
     
   ## Questions
 
