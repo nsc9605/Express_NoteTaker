@@ -4,7 +4,7 @@
 
   ## Description
 
-  This application can be used to write, save, and delete notes using the backend Express program allowing saving and retrieving data from the JSON file. The purpose of this application is to help the user organize tasks/events/reminders. 
+  This application's functionality helps to write, save, and delete notes using the backend Express program allowing saving and retrieving data from the JSON file. The purpose of this application is to help the user organize tasks/events/reminders.  
 
   [Click me to deploy app!](https://pacific-thicket-92509.herokuapp.com/)
   
@@ -23,10 +23,11 @@
   - The public folder contains the html, css, and index.js files that represent the front-end.
   - The server.js holds the routes to direct information to the different urls.
   - The api/html routes contains all the saved notes in json format.
-  - Once the server is run, it will display the main page with button to "Get Started" which will take the user to the notes page to start creating new notes by adding a "Note Title" and then "Note Text" which will hold the tasks/event/ reminders.
-  - The db.json file stores all the saved note data.
-  - The user is able to delete notes when they no longer have use.
-  - The json file will update when notes are added/deleted.
+  - Once the server is run, it will display the main page with button to "Get Started" which will take the user to the notes page to start creating new notes by adding a "Note Title" and then "Note Text" which will hold the tasks/event/reminders.
+  - The db.json file stores all the newly written notes and saved note data as well as updates when a note is deleted.
+  - The user is able to delete notes when they have completed the task / no longer have use for the note.
+  - The `uuid` package helps in assigning individual id's to each note to help keep them separate when saving and updating the db.json.
+
 
   ## Demonstration
   ![NoteTaker Gif](./public/assets/images/NoteTaker.gif)
