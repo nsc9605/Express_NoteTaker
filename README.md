@@ -40,9 +40,9 @@
 
   ## Usage
 
-  Please follow the directions below in order to run this app:
+  Once all dependencies have been installed, please follow the directions below in order to run this app:
 
-      take notes
+      Run this application in the terminal by running `node server.js` command and will open in browser by   using localhost:#. A deployed link is provided for this specific project through Heroku.
 
 
   ## License
@@ -52,9 +52,10 @@
 
   ## Contribution
 
-  Contributors:
+  This project was creating using provided materia from Bootcamp class as well as my tutor, Eric Wallen, and help from other students in the class in a private study group.
 
-      n/a
+  This video helped get me started setting up my files and making sure I had all required dependencies installed:
+  * [Click me to view video!](https://www.youtube.com/watch?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr&v=G7RvQMW2DOg&feature=youtu.be)
 
     
   ## Technologies
