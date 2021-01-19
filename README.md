@@ -6,6 +6,7 @@
 
   This application can be used to write, save, and delete notes using the backend Express program allowing saving and retrieving data from the JSON file. The purpose of this application is to help the user organize tasks/events/reminders. 
 
+  [Click me to deploy app!](https://pacific-thicket-92509.herokuapp.com/)
   
   ## Table of Contents
   
